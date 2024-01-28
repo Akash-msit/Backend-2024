@@ -5,12 +5,19 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "dev":"nodemon src/index.js"
+    "dev": "nodemon -r dotenv/config --experimental-json-modules src/index.js",
+    "serve": "nodemon server.js"
   },
   "keywords": [
     "javascript",
     "backend"
   ],
   "author": "Akash Dey",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.1",
+    "express": "^4.18.2",
+    "mongoose": "^8.1.1",
+    "nodemon": "^3.0.3"
+  }
 }
