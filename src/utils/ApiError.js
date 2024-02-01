@@ -5,7 +5,7 @@ class ApiError extends Error{
         errors = [],
         statck = ""
     ){
-        super(message)
+        super(message)  //overwrite this constustor 
         this.statusCode = statusCode
         this.data = null
         this.message = message
